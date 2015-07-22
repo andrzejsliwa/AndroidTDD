@@ -13,6 +13,7 @@ before_script:
     - emulator -avd test -no-skin -no-audio -no-window &
     - android-wait-for-emulator
 
+
 script:
     - travis_retry ./gradlew build :androidformenhancer:connectedCheck
 
